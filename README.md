@@ -30,3 +30,7 @@ in this project you will learn :-
 
 You can use this app as base to build your own desktop app.
 
+![image](https://user-images.githubusercontent.com/97878002/186454619-79c0af15-775c-4a4c-97e6-b82d6edef4ec.png)
+
+![image](https://user-images.githubusercontent.com/97878002/186454793-173b2bc1-bd1f-4fa9-a2ef-babdc857ef10.png)
+

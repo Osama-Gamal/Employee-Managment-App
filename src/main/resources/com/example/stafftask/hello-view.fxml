@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="607.0" prefWidth="999.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stafftask.Controllers.HelloController">
+   <children>
+      <Pane prefHeight="616.0" prefWidth="999.0">
+         <children>
+            <Pane layoutX="16.0" layoutY="529.0" prefHeight="54.0" prefWidth="707.0" style="-fx-background-color: #0e97f9; -fx-background-radius: 20px;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="60.0" prefHeight="54.0" prefWidth="234.0" text="Customer" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Black" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="428.0" prefHeight="54.0" prefWidth="234.0" text="Management" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Black" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ArrayBtn" layoutX="34.0" layoutY="5.0" mnemonicParsing="false" onAction="#onArrayListClicked" prefHeight="42.0" prefWidth="248.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20px;" text="ArrayList Example" textFill="#0e97f9">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="LinkedBtn" layoutX="415.0" layoutY="5.0" mnemonicParsing="false" onAction="#onLinkedListClicked" prefHeight="42.0" prefWidth="248.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20px;" text="LinkedList Example" textFill="#0e97f9">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="drawerBtn" layoutX="309.0" layoutY="5.0" mnemonicParsing="false" onAction="#DrawerBtnClicked" prefHeight="42.0" prefWidth="87.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50px;" text="Open" textFill="#0e97f9">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="15.0" layoutY="14.0" prefHeight="88.0" prefWidth="969.0" style="-fx-background-color: #0e97f9; -fx-background-radius: 20px;">
+               <children>
+                  <Button layoutX="5.0" layoutY="25.0" mnemonicParsing="false" onAction="#insertMemberClicked" prefHeight="42.0" prefWidth="183.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;" text="Insert Memeber" textFill="#0f96f7">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="196.0" layoutY="25.0" mnemonicParsing="false" onAction="#RemoveMemberClicked" prefHeight="42.0" prefWidth="183.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;" text="Remove Memeber" textFill="#0f96f7">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="388.0" layoutY="25.0" mnemonicParsing="false" onAction="#ModifymemberClicked" prefHeight="42.0" prefWidth="183.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;" text="Modify Memeber" textFill="#0f96f7">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="581.0" layoutY="25.0" mnemonicParsing="false" onAction="#SaveDataClicked" prefHeight="42.0" prefWidth="183.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;" text="Save Data" textFill="#0f96f7">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="774.0" layoutY="25.0" mnemonicParsing="false" onAction="#loadDataClicked" prefHeight="42.0" prefWidth="183.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;" text="Load Data" textFill="#0f96f7">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <TableView fx:id="tableView" layoutX="15.0" layoutY="113.0" prefHeight="398.0" prefWidth="707.0" style="-fx-background-radius: 10px;">
+              <columns>
+                  <TableColumn fx:id="IDColumn" prefWidth="91.73126220703125" style="-fx-background-radius: 10px;" text="Emp NO" />
+                <TableColumn fx:id="nameColumn" prefWidth="111.6728515625" style="-fx-background-radius: 10px;" text="Name" />
+                <TableColumn fx:id="phoneColumn" prefWidth="137.59686279296875" style="-fx-background-radius: 10px;" text="Department" />
+                  <TableColumn fx:id="nationalityColumn" prefWidth="95.7196044921875" style="-fx-background-radius: 10px;" text="Salary" />
+                  <TableColumn fx:id="currentColumn" prefWidth="90.73419189453125" style="-fx-background-radius: 10px;" text="DOB" />
+              </columns>
+            </TableView>
+            <Pane layoutX="729.0" layoutY="114.0" prefHeight="398.0" prefWidth="259.0" style="-fx-background-color: #0f96f7; -fx-background-radius: 20px;">
+               <children>
+                  <TextField fx:id="searchText" layoutX="6.0" layoutY="88.0" prefHeight="34.0" prefWidth="248.0" promptText="Enter The Name or ID Of Client" style="-fx-background-radius: 10px; -fx-background-color: #ffffff;" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="12.0" prefHeight="54.0" prefWidth="234.0" text="Employee Management System" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="-5.0" layoutY="289.0" prefHeight="42.0" prefWidth="269.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+                     <children>
+                        <Label fx:id="listSort" alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="-6.0" prefHeight="54.0" prefWidth="132.0" text="ArrayList" textFill="#0f96f7">
+                           <font>
+                              <Font name="Arial Black" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button layoutX="132.0" layoutY="135.0" mnemonicParsing="false" onAction="#BinarySearchClicked" prefHeight="34.0" prefWidth="120.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;" text="Binary Search" textFill="#0f96f7">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="7.0" layoutY="135.0" mnemonicParsing="false" onAction="#LinearSearchClicked" prefHeight="34.0" prefWidth="120.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;" text="Linear Search" textFill="#0f96f7">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="orderBox" layoutX="8.0" layoutY="187.0" onAction="#onSelectItem" prefHeight="34.0" prefWidth="248.0" promptText="No Sort" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;" />
+               </children>
+            </Pane>
+            <Pane layoutX="729.0" layoutY="529.0" prefHeight="54.0" prefWidth="259.0" style="-fx-background-color: #0f96f7; -fx-background-radius: 20px;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" prefHeight="54.0" prefWidth="248.0" text="Welcome" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Black" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</VBox>
